@@ -7,12 +7,6 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<dependency>
-  <groupId>de.gurkenlabs</groupId>
-  <artifactId>litiengine</artifactId>
-  <version>0.5.1</version>
-</dependency>
-
 	<name>Zork Start</name>
 
 	<properties>
