@@ -1,4 +1,5 @@
 package ch.bbw.zork;
+
 import java.util.ArrayList;
 
 public class Inventory {
@@ -12,8 +13,8 @@ public class Inventory {
     }
 
     public boolean isInInventory(Item anItem) {
-        for (int i = 0; i < bag.size();) {
-            if(bag.get(i).equals(anItem)) {
+        for (int i = 0; i < bag.size(); ) {
+            if (bag.get(i).equals(anItem)) {
                 return true;
             }
             i++;
@@ -33,16 +34,15 @@ public class Inventory {
         }
     }
 
-
     public void printInventory() {
         if (bag.size() == 0) {
             System.out.println("There is nothing in your inventory! :)");
-        } else if(bag.size()>0){
+        } else if (bag.size() > 0) {
 
             for (int i = 0; i < bag.size(); i++) {
                 System.out.println(bag.get(i).toString());
             }
-        }else {
+        } else {
             System.out.println("There is nothing in your inventory! :)");
         }
     }

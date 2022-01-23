@@ -6,7 +6,7 @@ import java.util.ArrayList;
 public class Item {
 
     private String itemName;
-    private double weight;
+    private String weight;
     private String itemType;
     private boolean isWeapon;
     private boolean isMedicine;
@@ -18,7 +18,7 @@ public class Item {
         this.weight = this.weight;
     }
 
-    public Item(String itemName, String itemType, double weight) {
+    public Item(String itemName, String itemType, String weight) {
         super();
         this.itemName = itemName;
         this.itemType = itemType;
@@ -37,7 +37,7 @@ public class Item {
         return itemType;
     }
 
-    public double getWeight() {
+    public String getWeight() {
         return weight;
     }
 

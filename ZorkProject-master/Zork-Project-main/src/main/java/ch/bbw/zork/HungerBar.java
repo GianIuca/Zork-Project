@@ -4,7 +4,7 @@ package ch.bbw.zork;
 public class HungerBar {
 
     private static final int max = 20;
-    private String[] hunger;
+    private final String[] hunger;
 
     public HungerBar() {
         hunger = new String[max];
@@ -61,6 +61,6 @@ public class HungerBar {
             System.out.println("{" + hunger[i] + "}");
         }
         System.out.println("");
-        return ;
+
     }
 }
