@@ -50,4 +50,20 @@ public class Inventory {
     public int numberOfItems() {
         return bag.size();
     }
+
+    public ArrayList<Item> getBag() {
+        return bag;
+    }
+
+    public void setBag(ArrayList<Item> bag) {
+        this.bag = bag;
+    }
+
+    public Item getItem() {
+        return item;
+    }
+
+    public void setItem(Item item) {
+        this.item = item;
+    }
 }
