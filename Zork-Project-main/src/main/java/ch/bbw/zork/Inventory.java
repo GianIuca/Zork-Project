@@ -39,8 +39,8 @@ public class Inventory {
             System.out.println("There is nothing in your inventory! :)");
         } else if (bag.size() > 0) {
 
-            for (int i = 0; i < bag.size(); i++) {
-                System.out.println(bag.get(i).toString());
+            for (Item value : bag) {
+                System.out.println("Item:" + value.getItemName() + " Type: " + value.getItemType() + " Weight: " + value.getWeight());
             }
         } else {
             System.out.println("There is nothing in your inventory! :)");
@@ -65,5 +65,13 @@ public class Inventory {
 
     public void setItem(Item item) {
         this.item = item;
+    }
+
+    @Override
+    public String toString() {
+        return "Inventory{" +
+                "bag=" + bag +
+                ", item=" + item +
+                '}';
     }
 }
